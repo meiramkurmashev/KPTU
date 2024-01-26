@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Марки углей";
+}
+
+<h2>Марки углей</h2>
+
+
+<button>
+    @Html.ActionLink("Добавить", "CoalGradesCreate", "Directory", new { }, null)
+</button>
+<button type="submit" value="" onclick="location.href='/Home/Directory'">Назад</button>
+
+<br />
+<br />
+<table border="1">
+    <thead>
+
+        <tr  class="odd">
+            <td><b>Код</b></td>
+            <td><b>Наименование</b></td>
+
+
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var wag in ViewBag.a)
+        {
+            <tr class="even">
+
+                <td>@Html.ActionLink((string)wag.Number1.ToString(), "CoalGradesChange", "Directory", new { id = @wag.Number1 }, null)  </td>
+                <td>@Html.ActionLink((string)wag.Number2, "CoalGradesChange", "Directory", new { id = @wag.Number1 }, null)  </td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+
+<br />
+<br />
+
+

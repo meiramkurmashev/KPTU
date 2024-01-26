@@ -1,0 +1,117 @@
+﻿<h1>Корректировка/удаление записи</h1>
+
+<form method="get" action="/Directory/RailwayStationsChangeSave">
+    <br />
+    @foreach (var wag in ViewBag.a)
+{
+    
+        <table>
+            <tr><td><b><label>Код</label></b></td><td><input readonly name=id value=@wag.Id1></td></tr>
+
+            <tr>
+                <td><label>Наименование</label></td>
+                <td>
+                    <input name=name value="@wag.Name1">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>English name</label></td>
+                <td>
+                    <input name=nme value=@wag.Name2>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Станция распыления</label></td>
+                <td>
+                    <input name=nm_r value=@wag.Name3>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Железная дорога</label></td>
+                <td>
+                    <b>
+                        <select id="siF7" name="kod_dor" onchange="update(event.target, 'bdF18')">
+                            <option value="@wag.Id2" selected>@wag.Name5</option>
+                            @foreach (var wag1 in ViewBag.b)
+                            {
+
+
+                                <option value="@wag1.Id">@wag1.Id - @wag1.Name</option>
+
+
+                            }
+                        </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label>Расстояние от ст.Караганда-Угольная</label></td>
+                <td>
+                    <input name=rast value=@wag.Id4>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Параграф работы</label></td>
+                <td>
+                    <input name=par value=@wag.Id3>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label>Примечание</label></td>
+                <td>
+                    <input name=prim value=@wag.Name4>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Станция за пределами республики</label></td>
+                <td>
+                    <input  name=kod_st_pog type="" value=@wag.Id5>
+                </td>
+            </tr>
+
+        </table>
+    }
+
+    <br />
+    <button type="submit" value="" onclick="location.href='@Url.Action("RailwayStationsChangeSave")'">Сохранить</button>
+
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+    <br /> <br />
+
+    <script>
+
+
+               function myFunc() {
+                   if (confirm("Вы уверены?") == true) {
+                       CallFailureOK();
+                   }
+                   else {
+                       CallFailureCancel();
+                   }
+
+               }
+               function CallFailureCancel() {
+
+
+               }
+               //Html.ActionLink("Удалить", "CoalGradesDelete", "Directory", new { id = ViewBag.id }, null),onclick = "myFunc()" }
+               function CallFailureOK() {
+                   /**/
+                   location.href = "/Directory/RailwayStationsDelete/"+@ViewBag.id;
+               /**/
+
+
+           }
+    </script>
+    <button onclick="myFunc()" type="button">Удалить</button>
+</form>
+<br />

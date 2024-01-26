@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Справочники";
+}
+
+<h2>Справочники</h2>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <span>
+        <ul>
+            <li>@Html.ActionLink("Признак перевозки", "SingOfTr", "Directory")</li>
+            <li>@Html.ActionLink("Типы маршрутов", "RouteTypes", "Directory")</li>
+            <li>@Html.ActionLink("Марки углей", "CoalGrades", "Directory")</li>
+            <li>@Html.ActionLink("Поставщики", "Suppliers", "Directory")</li>
+            <li>@Html.ActionLink("Поставщик-марки углей", "CoalSupplier", "Directory")</li>
+            <li>@Html.ActionLink("Потребители", "Consumers", "Directory")</li>
+            <li>@Html.ActionLink("Группы потребителей", "ConsumerGroups", "Directory")</li>
+            <li>@Html.ActionLink("Ж/д станции", "RailwayStations", "Directory")</li>
+            <li>@Html.ActionLink("Ж/д дороги", "Railroads", "Directory")</li>
+            <li>@Html.ActionLink("Договорной тариф", "NegotiatedRate", "Directory")</li>
+            <li>@Html.ActionLink("Вертушки", "Turntables", "Directory")</li>
+        </ul>
+    </span>
+</body>
+</html>

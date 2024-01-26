@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Ж/д станции";
+}
+
+<h2>Ж/д станции</h2>
+<button>
+    @Html.ActionLink("Добавить", "RailwayStationsCreate", "Directory", new { }, null)
+</button>
+<button type="submit" value="" onclick="location.href='/Home/Directory'">Назад</button>
+<br />
+<br />
+
+<table border="1">
+    <thead>
+
+        <tr>
+            <td><b>Код</b></td>
+            <td><b>Наименование</b></td>
+            <td><b>Информация</b></td>
+
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var wag in ViewBag.a)
+        {
+            <tr>
+
+                <td>@Html.ActionLink((string)wag.Id.ToString(), "RailwayStationsChange", "Directory", new { id = @wag.Id }, null)  </td>
+                <td>@Html.ActionLink((string)wag.Name.ToString(), "RailwayStationsChange", "Directory", new { id = @wag.Id }, null)  </td>
+                <td>@Html.ActionLink((string)wag.About.ToString(), "RailwayStationsChange", "Directory", new { id = @wag.Id }, null)  </td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+

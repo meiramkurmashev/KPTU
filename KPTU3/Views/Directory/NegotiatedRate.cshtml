@@ -1,0 +1,44 @@
+﻿
+
+@{
+    ViewBag.Title = "Договорной тариф";
+}
+
+<h2>Договорной тариф</h2>
+
+
+<button>
+    @Html.ActionLink("Добавить", "NegotiatedRateCreate", "Directory", new { }, null)
+</button>
+<button type="submit" value="" onclick="location.href='/Home/Directory'">Назад</button>
+
+<br />
+<br />
+<table border="1">
+    <thead>
+
+        <tr>
+            <td><b>Код</b></td>
+            <td><b>Наименование</b></td>
+
+
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var wag in ViewBag.a)
+        {
+            <tr>
+                <td>@Html.ActionLink((string)wag.Id.ToString(), "NegotiatedRateChange", "Directory", new { id = @wag.Id }, null)  </td>
+                <td>@Html.ActionLink((string)wag.Name, "NegotiatedRateChange", "Directory", new { id = @wag.Id }, null)  </td>
+
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+

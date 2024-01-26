@@ -1,0 +1,83 @@
+﻿<form method="post" action="/directory/CoalSupplierLoad">
+    @{
+        //  Layout = null;//для представления не используется мастер-страница
+    }<br /> 
+     <table>
+
+
+         <tr>
+             <td>Поставщик</td>
+             <td>
+                 <script> function update(e, targetId) {
+                         let target = document.getElementById(targetId);
+                         let ob = e.options[e.selectedIndex]
+                         target.value = `${ob.text}`
+                     }</script>
+                 
+               
+                 <select required id="siF6" name="kod_post" onchange="update(event.target, 'bdF17')">
+                     <option value='' selected>Выберите поставщика</option>
+                     @foreach (var wag in ViewBag.Suppliers)
+                     {
+
+
+                         <option value="@wag.Id">@wag.Name</option>
+
+
+                     }
+                 </select>
+
+             </td>
+                 </tr>
+                 <tr>
+                     <td>Марка</td>
+                     <td>
+                         <script>
+                            function update(e, targetId) {
+                                 let target = document.getElementById(targetId);
+                                 let ob = e.options[e.selectedIndex]
+                                 target.value = `${ob.text}`
+                             }</script>
+
+                         
+                         <select required id="siF7" name="km" onchange="update(event.target, 'bdF18')">
+                             <option value='' selected>Выберите марку угля</option>
+                             @foreach (var wag in ViewBag.Coals)
+                             {
+
+
+                                 <option value="@wag.Number1">@wag.Number2</option>
+
+
+                             }
+                         </select>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>Зола</td>
+                     <td><input name=zola required></td>
+                 </tr>
+                 <tr>
+                     <td>Влага</td>
+                     <td> <input name=vlaga required></td>
+                 </tr>
+                 <tr>
+                     <td>Сера</td>
+                     <td> <input name=sera required></td>
+                 </tr>
+
+
+             </table>
+
+
+
+
+    @{
+
+    }
+    <button type="submit" value="" >Добавить</button>
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+
+
+
+</form>

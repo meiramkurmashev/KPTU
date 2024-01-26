@@ -1,0 +1,191 @@
+﻿
+      
+     <script>
+
+
+               function myFunc() {
+                   if (confirm("Вы уверены?") == true) {
+                       CallFailureOK();
+                   }
+                   else {
+                       CallFailureCancel();
+                   }
+
+               }
+               function CallFailureCancel() {
+
+
+               }
+               //Html.ActionLink("Удалить", "CoalGradesDelete", "Directory", new { id = ViewBag.id }, null),onclick = "myFunc()" }
+                 function CallFailureOK() {
+                     /**/
+                     location.href = "/Routes/Delete?id=" +@ViewBag.Id;
+                     /**/
+                 }
+
+         
+         
+</script>
+<form method="post" action="/Routes/ChangeSave">
+    <br />
+    <h1 name=id>Изменение маршрута №@ViewBag.Id</h1>
+    <table>
+        <tr><td><b><label>Номер маршрута</label></b></td><td><input name=id value=@ViewBag.Id readonly></td></tr>
+        <tr><td><b><label>Дата маршрута</label></b></td><td><input name=date1 type="date" class="selector" value=@ViewBag.Date1 required></td></tr>
+
+        <tr>
+            <td><b><label>Тип маршрута</label></b></td>
+            <td>
+                <script>
+                    function update(e, targetId) {
+                        let target = document.getElementById(targetId);
+                        let ob = e.options[e.selectedIndex]
+                        target.value = `${ob.text}`
+                    }</script>
+
+
+                <select required id="a1" name="type" onchange="update(event.target, 'b1')">
+                    <option value='@ViewBag.Type' selected>@ViewBag.TypeName</option>
+                    @foreach (var wag in ViewBag.listRoutes)
+                    {
+
+
+                        <option value="@wag.Id">@wag.Name</option>
+
+
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b><label>Вертушки</label></b></td>
+            <td>
+                <script>
+                    function update(e, targetId) {
+                        let target = document.getElementById(targetId);
+                        let ob = e.options[e.selectedIndex]
+                        target.value = `${ob.text}`
+                    }</script>
+
+
+                <select required id="a2" name="vert" onchange="update(event.target, 'b2')">
+                    <option value='@ViewBag.Vert' selected>@ViewBag.VertName</option>
+                    @foreach (var wag in ViewBag.listTurntables)
+                    {
+
+
+                        <option value="@wag.Id">@wag.Name</option>
+
+
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b><label>Код станции отправителя</label></b></td>
+            <td>
+                <script>
+                    function update(e, targetId) {
+                        let target = document.getElementById(targetId);
+                        let ob = e.options[e.selectedIndex]
+                        target.value = `${ob.text}`
+                    }</script>
+
+
+                <select required id="a3" name="codest" onchange="update(event.target, 'b3')">
+                    <option value='@ViewBag.Codest' selected>@ViewBag.CodestName</option>
+                    @foreach (var wag in ViewBag.listStations)
+                    {
+
+
+                        <option value="@wag.Id">@wag.Name</option>
+
+
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b><label>Код ж.д.дороги</label></b></td>
+            <td>
+                <script>
+                    function update(e, targetId) {
+                        let target = document.getElementById(targetId);
+                        let ob = e.options[e.selectedIndex]
+                        target.value = `${ob.text}`
+                    }</script>
+
+
+                <select required id="a4" name="coderote" onchange="update(event.target, 'b4')">
+                    <option value='@ViewBag.Coderote' selected>@ViewBag.CoderoteName</option>
+                    @foreach (var wag in ViewBag.listRoads)
+                    {
+
+
+                        <option value="@wag.Id">@wag.Name</option>
+
+
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b><label>Потребитель</label></b></td>
+            <td>
+                <script>
+                    function update(e, targetId) {
+                        let target = document.getElementById(targetId);
+                        let ob = e.options[e.selectedIndex]
+                        target.value = `${ob.text}`
+                    }</script>
+
+
+                <select required id="a5" name="potreb" onchange="update(event.target, 'b5')">
+                    <option value='@ViewBag.Potreb' selected>@ViewBag.PotrebName</option>
+                    @foreach (var wag in ViewBag.listConsumers)
+                    {
+
+
+                        <option value="@wag.Id3">@wag.Name</option>
+
+
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b><label>Код потребителя 4</label></b></td>
+            <td>
+                <script>
+                    function update(e, targetId) {
+                        let target = document.getElementById(targetId);
+                        let ob = e.options[e.selectedIndex]
+                        target.value = `${ob.text}`
+                    }</script>
+
+
+                <select required id="a6" name="codepotreb" onchange="update(event.target, 'b6')">
+                    <option value='@ViewBag.Codepotreb' selected>@ViewBag.Codepotreb</option>
+                    @foreach (var wag in ViewBag.listConsumers)
+                    {
+
+
+                        <option value="@wag.Id4">@wag.Name</option>
+
+
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr><td><b><label>Время предъявления маршрута</label></b></td><td><input name=timepr   type="time" id="appt"  value="@ViewBag.Timepr" required></td></tr>
+        <tr><td><b><label>Время сдачи маршрута</label></b></td><td><input name=timedel  type="time" id="appt"  value="@ViewBag.Timedel" required></td></tr>
+        <tr><td><b><label>Время закрытия суток по КПТУ и КТЖ</label></b></td><td><input name=timeclose  type="time" id="appt"  value="@ViewBag.Timeclose" required></td></tr>
+
+    </table>
+    <br />
+    <button type="submit" value="" >Изменить </button>
+    <button type="button" onclick="myFunc()">Удалить </button>
+    <br /><br /><button type="button" value="" onclick="history.back()">Назад</button>
+</form>
+
+

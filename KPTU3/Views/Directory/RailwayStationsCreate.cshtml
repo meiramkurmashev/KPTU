@@ -1,0 +1,91 @@
+﻿<form  method="post" action="/directory/RailwayStationsLoad">
+    @{
+        //  Layout = null;//для представления не используется мастер-страница
+    }<br />
+    
+
+    <table>
+        <tr><td><b><label>Код</label></b></td><td><input name=id  required ></td></tr>
+
+        <tr>
+            <td><label>Наименование</label></td>
+            <td>
+                <input name=name required >
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>English name</label></td>
+            <td>
+                <input name=nme required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Станция распыления</label></td>
+            <td>
+                <input name=nm_r required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><label>Железная дорога</label></td>
+            <td>
+                <b>
+                    <select  id="siF7"  required name="kod_dor" onchange="update(event.target, 'bdF18')">
+                        <option value='' selected>Выберите дорогу</option>
+                        @foreach (var wag1 in ViewBag.b)
+                        {
+
+
+                            <option value="@wag1.Id">@wag1.Id - @wag1.Name</option>
+
+
+                        }
+                    </select>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><label>Расстояние от ст.Караганда-Угольная</label></td>
+            <td>
+                <input  name=rast required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Параграф работы</label></td>
+            <td>
+                <input  name=par required>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td><label>Примечание</label></td>
+            <td>
+                <input  name=prim required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Станция за пределами республики</label></td>
+            <td>
+                <input  name=kod_st_pog required>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+    @{
+
+    }
+    <button type="submit" value="">Добавить</button>
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+
+
+</form>

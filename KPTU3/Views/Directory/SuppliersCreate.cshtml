@@ -1,0 +1,55 @@
+﻿<form method="post" action="/directory/SuppliersLoad">
+    @{
+        //  Layout = null;//для представления не используется мастер-страница
+    }<br />
+    <table>
+
+        <tr><td><b><label>Код</label></b></td><td><input name=id1 required></td></tr>
+
+        <tr>
+            <td><label>Наименование</label></td>
+            <td>
+                <input name=nm required>
+            </td>
+        </tr>
+        <tr>
+            <td><label>English name</label></td>
+            <td>
+                <input name=nme required>
+            </td>
+        </tr>
+        <tr>
+            <td><b><label>Станция отгрузки</label></b></td>
+            <td>
+                <b>
+                    <select required id="siF7" name="id2" onchange="update(event.target, 'bdF18')">
+                        <option value="" selected>Выберите станцию</option>
+                        @foreach (var wag1 in ViewBag.b)
+                        {
+
+
+                            <option value="@wag1.Id">@wag1.Id - @wag1.Name</option>
+
+
+                        }
+                    </select>
+            </td>
+        </tr>
+        <tr><td><b><label>Код ж/д п.п</label></b></td><td><input name=id3 required></td></tr>
+        <tr><td><b><label>Шахты/факбрики</label></b></td><td><input name=id4 required></td></tr>
+        <tr><td><b><label>Код для сторонних предприятий</label></b></td><td><input name=id5 required></td></tr>
+        <tr><td><b><label>Код финансовый(для таксировки)</label></b></td><td><input name=id6 required></td></tr>
+        <tr><td><b><label>Пункт погрузки</label></b></td><td><input name=id7 required></td></tr>
+
+
+    </table>
+
+
+    @{
+
+    }
+    <button type="submit" value="">Добавить</button>
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+
+</form>
+

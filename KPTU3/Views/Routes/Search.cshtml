@@ -1,0 +1,172 @@
+﻿@*@{
+        ViewBag.Title = "Home Page";
+    }
+
+    <div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+    <a class="btn btn-default" href="/Home/Meiram" value=name>MEIRAM</a>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>*@
+
+@{
+    //Layout = null;//для представления не используется мастер-страница
+}
+<script>
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("myTable2");
+        switching = true;
+        // Set the sorting direction to ascending:
+        dir = "asc";
+        /* Make a loop that will continue until
+        no switching has been done: */
+        while (switching) {
+            // Start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /* Loop through all table rows (except the
+            first, which contains table headers): */
+            for (i = 1; i < (rows.length - 1); i++) {
+                // Start by saying there should be no switching:
+                shouldSwitch = false;
+                /* Get the two elements you want to compare,
+                one from current row and one from the next: */
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /* Check if the two rows should switch place,
+                based on the direction, asc or desc: */
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        // If so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        // If so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark that a switch has been done: */
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                // Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /* If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again. */
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
+@{
+    ViewBag.Title = "Маршруты";
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+
+        a {
+            text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        }
+
+        .link a {
+            position: absolute;
+            width: 100%;
+            height: 1.5em;
+            display: block;
+        }
+
+
+
+       
+    </style>
+</head>
+<body>
+
+    <h3>Маршруты</h3>
+    <form action="Search" method="post">
+        Поиск записей с:<input id="FileUpload" type="date" name="dateFrom" required value="@ViewBag.DateFrom" />
+        по: <input type="date" id="FileUpload" name="dateTo" required value="@ViewBag.DateTo" />
+        <button type="submit">Поиск</button>
+        <button type="button" value="" onclick="location.href='/Routes'">Сбросить</button>
+    </form><br />
+    <button type="submit" value="" onclick="location.href='/Routes/Archive'">Удаленные</button><br /><br />
+    <table id="myTable2" border="1" style="position: relative;">
+        <thead>
+            <tr>
+
+                <td>Номер маршрута</td>
+                <td onclick="sortTable(0)">Дата маршрута</td>
+                <td onclick="sortTable(0)">Тип маршрута</td>
+
+                <td>Код станции отправителя</td>
+                <td onclick="sortTable(0)">Код ж.д.дороги</td>
+                <td onclick="sortTable(1)">Потребитель</td>
+
+                <td>Время предъявления маршрута</td>
+                <td>Время сдачи маршрута</td>
+                <td>Время закрытия суток по КПТУ и КТЖ</td>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var wag in ViewBag.a)
+            {
+                <tr style=" height: 85px; text-decoration: none; ">
+                    <td>@Html.ActionLink((string)wag.Id, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" }) </td>
+                    <td>@Html.ActionLink((string)wag.Date1, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" })</td>
+                    <td>@Html.ActionLink((string)wag.TypeName, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" })</td>
+
+                    <td>@Html.ActionLink((string)wag.CodestName, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" })</td>
+                    <td>@Html.ActionLink((string)wag.CoderoteName, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" })</td>
+                    <td>@Html.ActionLink((string)wag.PotrebName, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black; word-break: break-all;" })</td>
+
+                    <td>@Html.ActionLink((string)wag.Timepr, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" })</td>
+                    <td>@Html.ActionLink((string)wag.Timedel, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" })</td>
+                    <td>@Html.ActionLink((string)wag.Timeclose, "Change", "Routes", new { id = @wag.Id, date1 = wag.Date1, type = @wag.Type, vert = @wag.Type, codest = @wag.Codest, coderote = @wag.Coderote, potreb = @wag.Potreb, codepotreb = @wag.Codepotreb, timepr = @wag.Timepr, timedel = @wag.Timedel, timeclose = @wag.Timeclose, type_name = @wag.TypeName, vert_name = @wag.VertName, codest_name = @wag.CodestName, coderote_name = @wag.CoderoteName, potreb_name = @wag.PotrebName }, new { style = "text-decoration: none; color:black" })</td>
+                </tr>
+
+            }
+
+
+        </tbody>
+    </table><br />
+    <button type="submit" value="" onclick="location.href='/Home/Routes'">Назад</button>
+</body>
+</html>

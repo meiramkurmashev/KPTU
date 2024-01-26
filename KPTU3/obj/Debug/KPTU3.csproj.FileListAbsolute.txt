@@ -1,0 +1,184 @@
+C:\KPTU3\KPTU3\obj\Debug\KPTU3.csproj.AssemblyReference.cache
+C:\KPTU3\KPTU3\obj\Debug\KPTU3.csproj.CoreCompileInputs.cache
+C:\KPTU3\KPTU3\bin\KPTU3.dll.config
+C:\KPTU3\KPTU3\bin\KPTU3.dll
+C:\KPTU3\KPTU3\bin\KPTU3.pdb
+C:\KPTU3\KPTU3\bin\roslyn\csc.exe
+C:\KPTU3\KPTU3\bin\roslyn\csc.exe.config
+C:\KPTU3\KPTU3\bin\roslyn\csc.rsp
+C:\KPTU3\KPTU3\bin\roslyn\csi.exe
+C:\KPTU3\KPTU3\bin\roslyn\csi.exe.config
+C:\KPTU3\KPTU3\bin\roslyn\csi.rsp
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.Managed.Core.targets
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\KPTU3\KPTU3\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.AppContext.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Collections.Immutable.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Console.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Globalization.Calendars.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.IO.Compression.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.IO.FileSystem.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Net.Http.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Net.Sockets.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Reflection.Metadata.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.ValueTuple.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Xml.XmlDocument.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Xml.XPath.dll
+C:\KPTU3\KPTU3\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\KPTU3\KPTU3\bin\roslyn\vbc.exe
+C:\KPTU3\KPTU3\bin\roslyn\vbc.exe.config
+C:\KPTU3\KPTU3\bin\roslyn\vbc.rsp
+C:\KPTU3\KPTU3\bin\roslyn\VBCSCompiler.exe
+C:\KPTU3\KPTU3\bin\roslyn\VBCSCompiler.exe.config
+C:\KPTU3\KPTU3\bin\Antlr3.Runtime.dll
+C:\KPTU3\KPTU3\bin\EntityFramework.dll
+C:\KPTU3\KPTU3\bin\EntityFramework.SqlServer.dll
+C:\KPTU3\KPTU3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\KPTU3\KPTU3\bin\Microsoft.Web.Infrastructure.dll
+C:\KPTU3\KPTU3\bin\Newtonsoft.Json.dll
+C:\KPTU3\KPTU3\bin\System.Web.Helpers.dll
+C:\KPTU3\KPTU3\bin\System.Web.Mvc.dll
+C:\KPTU3\KPTU3\bin\System.Web.Optimization.dll
+C:\KPTU3\KPTU3\bin\System.Web.Razor.dll
+C:\KPTU3\KPTU3\bin\System.Web.WebPages.Deployment.dll
+C:\KPTU3\KPTU3\bin\System.Web.WebPages.dll
+C:\KPTU3\KPTU3\bin\System.Web.WebPages.Razor.dll
+C:\KPTU3\KPTU3\bin\WebGrease.dll
+C:\KPTU3\KPTU3\bin\EntityFramework.xml
+C:\KPTU3\KPTU3\bin\EntityFramework.SqlServer.xml
+C:\KPTU3\KPTU3\bin\System.Web.Helpers.xml
+C:\KPTU3\KPTU3\bin\System.Web.Mvc.xml
+C:\KPTU3\KPTU3\bin\System.Web.Optimization.xml
+C:\KPTU3\KPTU3\bin\System.Web.Razor.xml
+C:\KPTU3\KPTU3\bin\System.Web.WebPages.xml
+C:\KPTU3\KPTU3\bin\System.Web.WebPages.Deployment.xml
+C:\KPTU3\KPTU3\bin\System.Web.WebPages.Razor.xml
+C:\KPTU3\KPTU3\bin\Newtonsoft.Json.xml
+C:\KPTU3\KPTU3\bin\Antlr3.Runtime.pdb
+C:\KPTU3\KPTU3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\KPTU3\KPTU3\bin\ru\System.Web.Helpers.resources.dll
+C:\KPTU3\KPTU3\bin\ru\System.Web.Mvc.resources.dll
+C:\KPTU3\KPTU3\bin\ru\System.Web.Optimization.resources.dll
+C:\KPTU3\KPTU3\bin\ru\System.Web.Razor.resources.dll
+C:\KPTU3\KPTU3\bin\ru\System.Web.WebPages.resources.dll
+C:\KPTU3\KPTU3\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\KPTU3\KPTU3\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\KPTU3\KPTU3\obj\Debug\KPTU3.csproj.CopyComplete
+C:\KPTU3\KPTU3\obj\Debug\KPTU3.dll
+C:\KPTU3\KPTU3\obj\Debug\KPTU3.pdb
+C:\KPTU3\KPTU3\bin\System.Web.Http.Common.dll
+C:\KPTU3\KPTU3\bin\System.Web.Http.Common.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\KPTU3.dll.config
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\KPTU3.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\KPTU3.pdb
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\csc.exe
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\csc.exe.config
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\csc.rsp
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\csi.exe
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\csi.exe.config
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\csi.rsp
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.AppContext.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Console.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.IO.Compression.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Net.Http.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Net.Sockets.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.ValueTuple.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Xml.XPath.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\vbc.exe
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\vbc.exe.config
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\vbc.rsp
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\Antlr3.Runtime.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\EntityFramework.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\Newtonsoft.Json.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Helpers.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Http.Common.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Mvc.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Optimization.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Razor.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.WebPages.Deployment.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.WebPages.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.WebPages.Razor.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\WebGrease.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\EntityFramework.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Http.Common.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Helpers.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Mvc.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Optimization.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.Razor.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.WebPages.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.WebPages.Deployment.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\System.Web.WebPages.Razor.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\Newtonsoft.Json.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\Antlr3.Runtime.pdb
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\ru\System.Web.Razor.resources.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\obj\Debug\KPTU3.csproj.AssemblyReference.cache
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\obj\Debug\KPTU3.csproj.CoreCompileInputs.cache
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\obj\Debug\KPTU3.csproj.CopyComplete
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\obj\Debug\KPTU3.dll
+C:\Users\PC\KPTU программа рез.коп. от 23.08.23\KPTU3\KPTU3\obj\Debug\KPTU3.pdb

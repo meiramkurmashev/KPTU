@@ -1,0 +1,54 @@
+﻿<h1>Корректировка/удаление записи</h1>
+<form method="get" action="/Directory/RouteTypesChangeSave">
+    <br />
+
+    @foreach (var wag in ViewBag.a)
+    {
+        <table>
+            <tr><td><b><label>Код</label></b></td><td><input readonly name=id value=@wag.Id></td></tr>
+
+            <tr>
+                <td><label>Наименование</label></td>
+                <td>
+                    <input name=name value="@wag.Name">
+                </td>
+            </tr>
+
+
+        </table>
+    }
+    <br />
+    <button type="submit" value="" onclick="location.href='@Url.Action("RouteTypesChangeSave")'">Сохранить</button>
+
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+    <br /> <br />
+
+    <script>
+
+
+               function myFunc() {
+                   if (confirm("Вы уверены?") == true) {
+                       CallFailureOK();
+                   }
+                   else {
+                       CallFailureCancel();
+                   }
+
+               }
+               function CallFailureCancel() {
+
+
+               }
+               //Html.ActionLink("Удалить", "CoalGradesDelete", "Directory", new { id = ViewBag.id }, null),onclick = "myFunc()" }
+               function CallFailureOK() {
+                   /**/
+                   location.href = "/Directory/RouteTypesDelete/"+@ViewBag.id;
+               /**/
+
+
+           }
+    </script>
+    <button onclick="myFunc()" type="button">Удалить</button>
+</form>
+<br />
+

@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Потребители";
+}
+
+<h2>Потребители</h2>
+
+
+<button>
+    @Html.ActionLink("Добавить", "ConsumersCreate", "Directory", new { }, null)
+</button>
+<button type="submit" value="" onclick="location.href='/Home/Directory'">Назад</button>
+<br />
+<br />
+<table border="1">
+    <thead>
+
+       
+        <tr>
+            <td><b>Мин.</b></td>
+            <td><b>Рп</b></td>
+            <td><b>№ п/п</b></td>
+            <td><b>Наименование</b></td>
+        </tr>
+        
+    </thead>
+    <tbody>
+
+
+        @foreach (var wag in ViewBag.a)
+        {
+            <tr>
+                <td>@Html.ActionLink((string)wag.Id1.ToString(), "ConsumersChange", "Directory", new { id1 = @wag.Id3 }, null)  </td>
+                <td>@Html.ActionLink((string)wag.Id2.ToString(), "ConsumersChange", "Directory", new { id1 = @wag.Id3 }, null)  </td>
+                <td>@Html.ActionLink((string)wag.Id3.ToString(), "ConsumersChange", "Directory", new { id1 = @wag.Id3 }, null)  </td>
+                <td>@Html.ActionLink((string)wag.Name.ToString(), "ConsumersChange", "Directory", new { id1 = @wag.Id3 }, null)  </td>
+
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+
+
+

@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Признак перевозки";
+}
+
+<h2>Признак перевозки</h2>
+<style>
+  
+</style>
+
+
+<button>
+    @Html.ActionLink("Добавить", "SingOfTrCreate", "Directory", new { }, null)
+</button>
+
+<button type="submit" value="" onclick="location.href='/Home/Directory'">Назад</button>
+
+<br /><br />
+<table border="1">
+    <thead>
+
+        <tr>
+            <td><b>Код</b></td>
+            <td><b>Наименование</b></td>
+
+
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var wag in ViewBag.a)
+        {
+            <tr>
+                <td>@Html.ActionLink((string)wag.Id.ToString(), "SingOfTrChange", "Directory", new { id = @wag.Id }, null)  </td>
+                <td>@Html.ActionLink((string)wag.Name, "SingOfTrChange", "Directory", new { id = @wag.Id }, null)  </td>
+
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+

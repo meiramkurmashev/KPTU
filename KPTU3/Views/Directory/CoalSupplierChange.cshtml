@@ -1,0 +1,86 @@
+﻿<h1>Корректировка/удаление записи</h1>
+
+<form method="get" action="/Directory/CoalSupplierChangeSave">
+    <br />
+    @foreach (var wag in ViewBag.a)
+    {
+        <table>
+
+            <tr>
+                <td><label>Поставщик</label></td>
+                <td>
+                    <input readonly name=kod_post value="@wag.Name1">
+                </td>
+            </tr>
+
+           
+
+            <tr>
+                <td><label>Марка</label></td>
+                <td>
+                    <input readonly name=km value="@wag.Name2">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Зола</label></td>
+                <td>
+                    <input name=zola value=@wag.Number3>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label>Влага</label></td>
+                <td>
+                    <input name=vlaga value=@wag.Number4>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Сера</label></td>
+                <td>
+                    <input name=sera value=@wag.Number5>
+                </td>
+
+            </tr>
+
+           
+
+        </table>
+    }
+
+    <br />
+    <button type="submit" value="" onclick="location.href='@Url.Action("CoalSupplierChangeSave")'">Сохранить</button>
+
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+    <br /> <br />
+
+           <script>
+
+
+               function myFunc() {
+                   if (confirm("Вы уверены?") == true) {
+                       CallFailureOK();
+                   }
+                   else {
+                       CallFailureCancel();
+                   }
+
+               }
+               function CallFailureCancel() {
+
+
+               }
+               //Html.ActionLink("Удалить", "CoalGradesDelete", "Directory", new { id = ViewBag.id }, null),onclick = "myFunc()" }
+               function CallFailureOK() {
+                   /**/
+                   location.href = "/Directory/CoalSupplierDelete?kod_post="+@ViewBag.kod_post+"&km="+@ViewBag.km;
+               /**/
+
+
+           }
+           </script>
+    <button onclick="myFunc()" type="button">Удалить</button>
+</form>
+<br />

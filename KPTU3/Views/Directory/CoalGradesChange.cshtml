@@ -1,0 +1,121 @@
+﻿<h1>Корректировка/удаление записи</h1>
+
+<form method="get" action="/Directory/CoalGradesChangeSave">
+    <br />
+    @foreach (var wag in ViewBag.a)
+    {
+        <table>
+            <tr><td><b><label>Код</label></b></td><td><input readonly name=id value=@wag.Number1></td></tr>
+
+            <tr>
+                <td><label>Наименование</label></td>
+                <td>
+                    <input name=nm value="@wag.Number2">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>English name</label></td>
+                <td>
+                    <input name=nme value=@wag.Number3>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Тип угля</label></td>
+                <td>
+                    <script>
+                        function update(e, targetId) {
+                            let target = document.getElementById(targetId);
+                            let ob = e.options[e.selectedIndex]
+                            target.value = `${ob.text}`
+                        }</script>
+
+                    <select id="siF7" name="gr_km" onchange="update(event.target, 'bdF18')">
+                        <option value="@wag.Number4" selected>@wag.Number4</option>
+                        @foreach (var ct in ViewBag.CT)
+                        {
+
+
+                            <option value="@ct.Id">@ct.Id - @ct.Name</option>
+
+
+                        }
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Зола</label></td>
+                <td>
+                    <input name=zola value=@wag.Number5>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label>Влага</label></td>
+                <td>
+                    <input name=vlaga value=@wag.Number6>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Сера</label></td>
+                <td>
+                    <input name=sera value=@wag.Number7>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label>Цена</label></td>
+                <td>
+                    <input name=cena value=@wag.Number8>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Дата</label></td>
+                <td>
+                    <input  name=dt_c value=@wag.Number9>
+                </td>
+            </tr>
+
+        </table>
+    }
+
+    <br />
+    <button type="submit" value="" onclick="location.href='@Url.Action("CoalGradesChangeSave")'">Сохранить</button>
+
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+    <br /> <br />
+
+    <script>
+
+
+               function myFunc() {
+                   if (confirm("Вы уверены?") == true) {
+                       CallFailureOK();
+                   }
+                   else {
+                       CallFailureCancel();
+                   }
+
+               }
+               function CallFailureCancel() {
+
+
+               }
+               //Html.ActionLink("Удалить", "CoalGradesDelete", "Directory", new { id = ViewBag.id }, null),onclick = "myFunc()" }
+               function CallFailureOK() {
+                   /**/
+                   location.href = "/Directory/CoalGradesDelete/"+@ViewBag.id;
+               /**/
+
+
+           }
+    </script>
+    <button onclick="myFunc()" type="button">Удалить</button>
+</form>
+<br />

@@ -1,0 +1,75 @@
+﻿<form method="post" action="/directory/CoalGradesLoad">
+    @{
+        //  Layout = null;//для представления не используется мастер-страница
+    }<br /> 
+    <table>
+        <tr>
+            <td>Код</td>
+            <td><input name=id required></td>
+        </tr>
+        <tr>
+            <td>Наименование</td>
+            <td><input name=nm required></td>
+        </tr>
+        <tr>
+            <td>English name</td>
+            <td><input name=nme required></td>
+        </tr>
+        <tr>
+            <td>Тип угля</td>
+            <td>
+                <script>
+                    function update(e, targetId) {
+                        let target = document.getElementById(targetId);
+                        let ob = e.options[e.selectedIndex]
+                        target.value = `${ob.text}`
+                    }</script>
+
+               
+                <select  required id="siF7" name="gr_km" onchange="update(event.target, 'bdF18')">
+                    <option selected  value="">Выберите марку угля</option>
+                    @foreach (var ct in ViewBag.CT)
+                    {
+
+
+                        <option value="@ct.Id">@ct.Name</option>
+
+
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Зола</td>
+            <td><input name=zola required></td>
+        </tr>
+        <tr>
+            <td>Влага</td>
+            <td> <input name=vlaga required></td>
+        </tr>
+        <tr>
+            <td>Сера</td>
+            <td> <input name=sera required></td>
+        </tr>
+        <tr>
+            <td>Цена</td>
+            <td> <input name=cena required></td>
+        </tr>
+        <tr>
+            <td>Дата</td>
+            <td><input name=dt_c type="date" required></td>
+        </tr>
+    </table>
+
+
+
+
+    @{
+
+    }
+    <button type="submit" value="" >Добавить</button>
+    <button type="button" onclick="javascript:history.go(-1);">Назад</button>
+
+
+
+</form>
